@@ -1,0 +1,62 @@
+main.stats {
+  * {
+    margin: 3% 0;
+  }
+
+  h1.title {
+    font-size: 45px;
+  }
+
+  .info-container {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+
+    h3 {
+      font-size: 30px;
+      font-weight: lighter;
+    }
+  }
+
+  .count {
+    color: $blue;
+    font-weight: bolder;
+  }
+
+  .title {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 1.8px;
+  }
+
+  .cta {
+    a {
+      font-size: 35px;
+      color: $primary;
+    }
+    button {
+      margin: 0;
+    }
+  }
+
+
+  @media (max-width: 550px) {
+    & {
+
+      padding: 0 5%;
+
+      * {
+        margin: 15% 0;
+      }
+
+      h1.title {
+        font-size: 35px;
+      }
+
+      .info-container {
+        width: 100%;
+      }
+    }
+  }
+}

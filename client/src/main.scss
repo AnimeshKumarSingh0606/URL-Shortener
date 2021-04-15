@@ -1,0 +1,45 @@
+//variables
+$primary: #ad343e;
+$secondary: #f3f8f2;
+$blue: #3581b8;
+$black: #071013;
+$red: #ad343e;
+$headerFont: 'Montserrat';
+$mainFont: 'Lato';
+
+//imports
+@import "routes/Home";
+@import "routes/StatFinder";
+@import "routes/Stats";
+@import "routes/Shorten";
+@import "routes/Redirect";
+@import "components/components";
+
+//Globals
+html, body, * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headerFont;
+}
+
+p, span, div, label {
+  font-family: $mainFont;
+}
+
+
+button {
+  background-color: $red;
+  color: $secondary;
+  outline: none;
+  border: none;
+  border-radius: 10%;
+  //padding: 15px 50px;
+  padding: 20px;
+  margin: 0 30px;
+  font-size: 30px;
+  cursor: pointer;
+}

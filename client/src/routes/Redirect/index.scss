@@ -1,0 +1,35 @@
+main {
+  display: block;
+  margin: auto;
+  text-align: center;
+
+  h1, h2 {
+    color: $primary;
+    font-size: 35px;
+  }
+
+  .redirectionUrl {
+    color: $blue;
+    text-decoration: none;
+  }
+}
+
+.spinner {
+  width: 250px;
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-direction: reverse;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  fill: $primary;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

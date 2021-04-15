@@ -1,0 +1,87 @@
+//Layout
+
+.layout-root {
+  padding: 0 1em;
+
+  & {
+    @media (max-width: 550px) {
+      padding: 0;
+    }
+  }
+}
+
+//Popup
+.popup {
+  border-radius: 15px;
+  padding: 15px 0;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.error {
+  background-color: darken($primary, 2%);
+  color: $secondary;
+}
+
+.success {
+  background-color: darken($blue, 2%);
+  color: $secondary;
+}
+
+
+
+
+//Navbar
+nav {
+  font-weight: 300;
+  height: 100px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: block;
+    float: left;
+  }
+
+  .navLink {
+    color: #4a5759;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0.5em;
+    font-size: 25px;
+  }
+
+  .navLink:hover::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #4a5759;
+    display: block;
+    bottom: -1px;
+  }
+
+  .activeNavLink::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: #4a5759;
+    display: block;
+    bottom: -2px;
+  }
+
+  @media (max-width: 550px) {
+    & {
+      width: 100vw;
+      text-align: center;
+    }
+  }
+
+}

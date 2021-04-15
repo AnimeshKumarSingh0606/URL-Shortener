@@ -1,0 +1,80 @@
+section.shorten {
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 75%;
+
+  * {
+    margin-bottom: 2%;
+  }
+
+  h2 {
+    width: 100%;
+    font-size: 50px;
+    //font-weight: bolder;
+    display: inline-block;
+    color: $primary;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 20px 0 20px 15px;
+    outline: none;
+    border: 3px solid $primary;
+    border-radius: 11px 8px;
+    font-size: 20px;
+    color: $primary;
+    margin: 10px 0;
+  }
+
+  label[htmlFor="customShort"] {
+    transition: opacity 200ms ease-in;
+  }
+
+  label.visible {
+    visibility: visible;
+  }
+
+  label.invisible {
+    visibility: hidden;
+  }
+
+  .cta {
+    display: block;
+    margin: 40px auto 0 auto;
+
+    label {
+      text-align: left;
+      font-size: 25px;
+      color: $primary;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    button {
+      display: block;
+      margin: auto;
+      border-radius: 10px;
+    }
+  }
+
+
+  @media (max-width: 550px) {
+    & {
+
+      margin: 0;
+      width: 100%;
+
+      h2 {
+        font-size: 30px;
+      }
+
+      button, input[type="text"] {
+        width: 75%;
+      }
+    }
+  }
+}
